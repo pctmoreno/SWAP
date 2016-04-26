@@ -62,6 +62,12 @@ En esta configuración, hemos configurado los servidores m1 y m2 con sus respect
 
 ###3.2.3 Resultados:
 
-Una vez configurado haproxy podemos ver en la siguiente captura el reparto de solicitudes a nuestra granja web:
+Una vez configurado haproxy podemos iniciar el haproxy con el siguiente comando:
+
+$ sudo /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg
+
+Y ahora ver en la siguiente captura el reparto de solicitudes a nuestra granja web:
 
 <img src="imagenes/resultadosHaproxy.png"/>
+
+Tal y como podemos ver en la captura anterior, el servidor m1 atiende 8 peticiones y el servidor m2 atiende 4 solicitudes, tal y como configuramos en el fichero de configuración.
