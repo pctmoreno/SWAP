@@ -43,3 +43,25 @@ Para la correcta visualizaci처n del reparto de carga, hemos colocado dos webs p�
 <img src="imagenes/resultadoBalanceador.png"/>
 
 Como se puede apreciar, el servidor 1 recibe el doble de carga que el servidor 2, tal y como hemos configurado en el apartado 3.1.2.
+
+##3.2 Haproxy:
+
+###3.2.1 Instalaci처n de Haproxy:
+
+Para la instalaci처n de Haproxy solo tendremos que ejeuctar el siguiente comando:
+
+$ sudo apt-get install haproxy
+
+###3.2.2 Configuraci처n de Haproxy:
+
+Para configurar haproxy tendremos que modificar el archivo /etc/haproxy/haproxy.cfg tal y como aparece en la siguiente captura:
+
+<img src="imagenes/configuracionHaproxy.png"/>
+
+En esta configuraci처n, hemos configurado los servidores m1 y m2 con sus respectivas direcciones ip y un valor weight para el servidor m1 de 2 y 1 para el servidor m2, para que el servidor m1 atienda el doble de peticiones que el servidor m2.
+
+###3.2.3 Resultados:
+
+Una vez configurado haproxy podemos ver en la siguiente captura el reparto de solicitudes a nuestra granja web:
+
+<img src="imagenes/resultadosHaproxy.png"/>
