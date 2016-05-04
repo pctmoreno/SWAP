@@ -1,0 +1,16 @@
+<pregunta>
+  <enunciado>El balanceador de carga:</enunciado>
+  <opcionA>Es un puente entre la red y los servidores finales</opcionA>
+  <opcionB>Puede manejar los protocolos de alto nivel</opcionB>
+  <opcionC>No puede manejar los protocolos de nivel de enlace</opcionC>
+  <opcionD>Todas son correctas</opcionD>
+  <solucion>D</solucion>
+</pregunta>
+<pregunta>
+  <enunciado>Cual de las siguientes opciones no es una posible implementación de balanceo de carga global</enunciado>
+  <opcionA>Uso de DNS</opcionA>
+  <opcionB>Redirección HTTP</opcionB>
+  <opcionC>GLSB basado en DNS</opcionC>
+  <opcionD>GSLB basado en protocolos de enrutamiento</opcionD>
+  <solucion>A</solucion>
+</pregunta>

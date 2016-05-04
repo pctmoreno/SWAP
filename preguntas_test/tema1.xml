@@ -1,0 +1,16 @@
+<pregunta>
+  <enunciado>La escalabilidad es:</enunciado>
+  <opcionA>Capacidad de montar los servidores físicos uno encima de otro</opcionA>
+  <opcionB>Capacidad para dar soporte a un número creciente de usuarios</opcionB>
+  <opcionC>Capacidad para dar soporte a un número fijo de usuarios</opcionC>
+  <opcionD>Todas las anteriores son correctas</opcionD>
+  <solucion>B</solucion>
+</pregunta>
+<pregunta>
+  <enunciado>Para desarrollar un sitio web, la opción más correcta y rápida es:</enunciado>
+  <opcionA>Montar una granja web</opcionA>
+  <opcionB>Montar un servidor web y un servidor de base de datos</opcionB>
+  <opcionC>Montarlo en una sóla máquina</opcionC>
+  <opcionD>Todas son ciertas</opcionD>
+  <solucion>C</solucion>
+</pregunta>

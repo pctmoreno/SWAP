@@ -1,0 +1,16 @@
+<pregunta>
+  <enunciado>Cual de los siguientes no es una alternativa para conectar la granja web a otras redes:</enunciado>
+  <opcionA>Configuración sin DMZ</opcionA>
+  <opcionB>Configuración de DMZ multiplexado</opcionB>
+  <opcionC>Configuración de DMZ simple</opcionC>
+  <opcionD>Configuración de DMZ doble</opcionD>
+  <solucion>B</solucion>
+</pregunta>
+<pregunta>
+  <enunciado>(Seleccione la opción incorrecta) En la configuración DMZ doble:</enunciado>
+  <opcionA>El DMZ tiene un front-rail y un track-rail</opcionA>
+  <opcionB>El delantero es un segmento de red conectado a Internet</opcionB>
+  <opcionC>Los servidores quedan protegidos con el cortafuegos</opcionC>
+  <opcionD>Todas son incorrectas</opcionD>
+  <solucion>A</solucion>
+</pregunta>

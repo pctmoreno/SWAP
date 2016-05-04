@@ -1,0 +1,16 @@
+<pregunta>
+  <enunciado>Cual de los siguientes no es un algoritmo de balanceo de carga:</enunciado>
+  <opcionA>Round-robin</opcionA>
+  <opcionB>Por ponderación</opcionB>
+  <opcionC>Por prioridad</opcionC>
+  <opcionD>Por repetición</opcionD>
+  <solucion>D</solucion>
+</pregunta>
+<pregunta>
+  <enunciado>Si tenemos dos servidores y cada uno tiene un porcentaje de disponibilidad, la disponibilidad del sistema será:</enunciado>
+  <opcionA>El cociente de los porcentajes</opcionA>
+  <opcionB>La suma de porcentajes</opcionB>
+  <opcionC>La resta de porcentajes</opcionC>
+  <opcionD>El producto de porcentajes</opcionD>
+  <solucion>D</solucion>
+</pregunta>
