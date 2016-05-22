@@ -67,7 +67,74 @@ A continuación, guardamos el archivo y reiniciamos el servicio con:
 /etc/init.d/mysql restart
 ```
 
+Como la versión de mysql es la versión 5.5.47, vamos a crear en el maestro un usuario para darle permisos de acceso para la replicación del esclavo.
 
+Entramos en mysql y ejecutamos lo siguiente:
 
+```
+mysql> CREATE USER esclavo IDENTIFIED BY 'esclavo';
+
+mysql> GRANT REPLICATION SLAVE ON *.* TO 'esclavo'@'%' IDENTIFIED BY 'esclavo';
+mysql> FLUSH PRIVILEGES;
+mysql> FLUSH TABLES;
+mysql> FLUSH TABLES WITH READ LOCK;
+```
+
+Ahora, para obtener los datos de la base de datos para configurar el esclavo ejecutamos:
+
+```
+SHOW MASTER STATUS;
+```
+Y nos aparecerá una tabla como esta:
+
+<img src="imagenes/showMasterStatus.png">
+
+Una vez realizado esto, procedemos con la configuración del mysql esclavo que es similar a la del maestro, pero con el server-id = 2.
+
+Editamos el archivo /etc/mysql/my.cnf
+
+- Comentamos la línea bind-address 127.0.0.1
+- Decomentamos la línea log_error = /var/log/mysql/error.log
+- Establecemos el identificador del servidor con: server-id = 2
+- Configuramos el registro binario con: log_bin = /var/log/mysql/bin.log
+
+A continuación, guardamos el archivo y reiniciamos el servicio con:
+
+```
+/etc/init.d/mysql restart
+```
+
+Ahora vamos a ejecutar en la linea de mysql lo siguiente:
+
+```
+mysql> CHANGE MASTER TO MASTER_HOST='10.0.0.129', MASTER_USER='esclavo', MASTER_PASSWORD='esclavo', MASTER_LOG_FILE='bin.000003', MASTER_LOG_POS=430, MASTER_PORT=3306;
+
+mysql> START SLAVE;
+```
+
+Una vez realizado esto, vamos al maestro y ejecutamos el siguiente comando para desbloquear las tablas:
+
+```
+mysql> UNLOCK TABLES;
+```
+A continuación vamos al esclavo y verificamos con el siguiente comando que todo está funcionando correctamente:
+
+```
+mysql> SHOW SLAVE STATUS\G
+```
+
+Nos debería aparecer algo como lo siguiente, y debemos fijarnos que en la variable "Seconds_Behind_Master" es distinto de "null":
+
+<img src="imagenes/showSlaveStatus.png">
+
+En este caso, aparece 0 por lo tanto la configuración es correcta.
+
+Ahora para verificar el buen funcionamiento, vamos a hacer una inserción en una tabla en el maestro:
+
+<img src="imagenes/insercionMaster.png">
+
+Y ahora podemos ver con dos consultas, las inserciones en la tabla, la primera consulta se realizó antes de hacer la inserción en el maestro, y la segunda consulta después de la inserción:
+
+<img src="imagenes/resultadoActualizacionAutomatica.png">
 
 
