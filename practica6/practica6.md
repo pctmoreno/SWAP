@@ -95,7 +95,7 @@ Podemos ver el estado del dispositivo RAID y posteriormente accedemos satisfacto
 A continuación podemos eliminar "en caliente" el disco que está marcado como que ha fallado con el siguiente comando:
 
 ```
-sudo mdadm --manage --remove /dev/md0 /dev/sdb
+sudo mdadm --manage --remove /dev/md127 /dev/sdb
 ```
 Y así quedaría el estado del sistema RAID después de eliminar ese disco:
 
@@ -112,4 +112,6 @@ Una vez realizado esto, el sistema empezará a reconstruir el sistema RAID. Si c
 Una vez finalizada la reconstrucción, podemos ver el estado final del sistema RAID totalmente operativo y accediendo a sus archivos:
 
 <img src="imagenes/activeRAID.png">
+
+
 
