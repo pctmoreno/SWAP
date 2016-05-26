@@ -1,0 +1,16 @@
+<pregunta>
+  <enunciado>Rendimiento en bits por segundo (Selecciona la opción correcta)</enunciado>
+  <opcionA>Hace referencia a la velocidad a la que el balanceador maneja el tráfico</opcionA>
+  <opcionB>Hace referencia a la velocidad a la que el balanceador pasa el tráfico</opcionB>
+  <opcionC>Hace referencia a la velocidad a la que el cliente recibe el tráfico</opcionC>
+  <opcionD>Todas son incorrectas</opcionD>
+  <solucion>D</solucion>
+</pregunta>
+<pregunta>
+  <enunciado>Cual de los siguientes no es un patrón de tráfico muy común</enunciado>
+  <opcionA>Servicio de DNS</opcionA>
+  <opcionB>HTTP</opcionB>
+  <opcionC>FTP</opcionC>
+  <opcionD>Tienda Web</opcionD>
+  <solucion>A</solucion>
+</pregunta>

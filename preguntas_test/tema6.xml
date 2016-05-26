@@ -1,0 +1,16 @@
+<pregunta>
+  <enunciado>Cual de los siguientes ataques no se pueden evitar con un balanceador de carga:</enunciado>
+  <opcionA>TCP SYN</opcionA>
+  <opcionB>Teardrop</opcionB>
+  <opcionC>DDOS</opcionC>
+  <opcionD>IP spoofing</opcionD>
+  <solucion>C</solucion>
+</pregunta>
+<pregunta>
+  <enunciado>Cual de los siguientes no corresponde a un nivel de seguridad:</enunciado>
+  <opcionA>Seguridad a nivel físico</opcionA>
+  <opcionB>Seguridad a nivel de administrador</opcionB>
+  <opcionC>Seguridad a nivel de descarga</opcionC>
+  <opcionD>Cuentas de servicios (o aplicaciones)</opcionD>
+  <solucion>C</solucion>
+</pregunta>

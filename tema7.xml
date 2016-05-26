@@ -1,0 +1,16 @@
+<pregunta>
+  <enunciado>Cuál de los siguientes es un método para mejorar las prestaciones de los sistemas de almacenamiento:</enunciado>
+  <opcionA>Ampliación lateral</opcionA>
+  <opcionB>Ampliación frontal</opcionB>
+  <opcionC>Ampliación vertical</opcionC>
+  <opcionD>Todas son correctas</opcionD>
+  <solucion>C</solucion>
+</pregunta>
+<pregunta>
+  <enunciado>Cuál de los siguientes es un dispositivo específico que incluye varios discos en rack</enunciado>
+  <opcionA>SAN</opcionA>
+  <opcionB>SSA</opcionB>
+  <opcionC>NAS</opcionC>
+  <opcionD>Todas son incorrectas</opcionD>
+  <solucion>C</solucion>
+</pregunta>
