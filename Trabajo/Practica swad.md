@@ -32,7 +32,8 @@ A continuación podemos ver un diagrama que lo demuestra:
 
 ![image alt text](image_1.png)
 
-###Orden correcto de los archivos JavaScript: Por ejemplo, si tengo un archivo como boostrap.js que utiliza la librería jquery.min.js , es recomendable poner antes la librería de jquery para que no tenga que volver atrás para cargar el archivo, son milésimas de segundo, pero en la optimización todo cuenta.
+###Orden correcto de los archivos JavaScript: 
+Por ejemplo, si tengo un archivo como boostrap.js que utiliza la librería jquery.min.js , es recomendable poner antes la librería de jquery para que no tenga que volver atrás para cargar el archivo, son milésimas de segundo, pero en la optimización todo cuenta.
 
 Otras veces, si por ejemplo el archivo js que queremos cargar tarda bastante en cargar y no se va a utilizar inmediatamente, se puede poner al final del código de la web para que se cargue el último cuando la web ya esté cargada visualmente, esto posibilitará la disminución de los tiempo de carga en archivos javascript pesados que no vayamos a utilizar en ese momento.
 
@@ -120,5 +121,5 @@ Esta herramienta nos permite ver los tiempos de carga, renderización, tamaños 
 
 ![image alt text](image_5.png)
 
-	Con esta información, si tenemos una página web con mucha carga y con tiempos de carga muy altos, podemos ver el origen o los orígenes de los problemas para poder optimizarlos paso a paso, como por ejemplo, intentar prescindir de ficheros que sean prescindibles sacrificando algo que no sea tan importante para la página o intentar optimizarlos para que bajen los tiempos de carga y procesado.
+Con esta información, si tenemos una página web con mucha carga y con tiempos de carga muy altos, podemos ver el origen o los orígenes de los problemas para poder optimizarlos paso a paso, como por ejemplo, intentar prescindir de ficheros que sean prescindibles sacrificando algo que no sea tan importante para la página o intentar optimizarlos para que bajen los tiempos de carga y procesado.
 
