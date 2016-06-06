@@ -32,19 +32,17 @@ A continuación podemos ver un diagrama que lo demuestra:
 
 ![image alt text](image_1.png)
 
-###Orden correcto de los archivos JavaScript: 
-Por ejemplo, si tengo un archivo como boostrap.js que utiliza la librería jquery.min.js , es recomendable poner antes la librería de jquery para que no tenga que volver atrás para cargar el archivo, son milésimas de segundo, pero en la optimización todo cuenta.
-
-Otras veces, si por ejemplo el archivo js que queremos cargar tarda bastante en cargar y no se va a utilizar inmediatamente, se puede poner al final del código de la web para que se cargue el último cuando la web ya esté cargada visualmente, esto posibilitará la disminución de los tiempo de carga en archivos javascript pesados que no vayamos a utilizar en ese momento.
-
-###Evitar css o js duplicado
+###Evitar css o js innecesarios o prescindibles:
 
 Siempre se ha de evitar insertar en las páginas webs el menor número de ficheros css o js que sean prescindibles, estos ficheros aunque no se utilicen, serán descargados y afectarán a los tiempos de carga de la página y a la carga del servidor, incluso si se encuentran duplicados dentro de la página lo volvería a cargar, por eso es aconsejables revisar el proyecto y no tener estos archivos duplicados.
 
 -Evitar redirecciones de archivos : Imagínate que tienes imágenes de tu servidor que se muestran en otras páginas que no son las tuyas, pues bien , esa imagen que se muestra en otra página que no es tuya , está utilizando tu servidor para poder visualizar la imágen de esa página, se recomienda encarecidamente evitar que puedan ver las imágenes u otros archivos fuera de tu página, para ello se utiliza el .htaccess,el .htaccess es un archivo que permite configurar las directivas donde está alojada la web restringiendo con permisos las imágenes para que no puedan ser visualizadas fuera de nuestra web.
 
 
--También es recomendable utilizar tanto archivos css como js que sean propios. Primero porque tienes que tener cuidado con que ese archivo externo no lo modifique el propio autor, eso podría cambiar las cosas en tu web y por otro lado, estas librerías externas no se guardan en la  caché y eso nos limitaría a no poder utilizarlos y tener que cargarlos cada vez que se inicia la web de nuevo**.**
+-También es recomendable utilizar tanto archivos css como js que sean propios. Primero porque tienes que tener cuidado con que ese archivo externo no lo modifique el propio autor, eso podría cambiar las cosas en tu web y por otro lado, estas librerías externas no se guardan en la  caché y eso nos limitaría a no poder utilizarlos y tener que cargarlos cada vez que se inicia la web de nuevo.
+
+-También podemos utilizar librerías o ficheros javascript, eliminando funcionalidades no utilizadas para reducir el peso de dichos ficheros.
+
 
 ###Caché: 
 Una de las formas más efectivas a la hora de optimizar tu página web es utilizar la caché. La caché permite guardar los archivos más pesados en tu navegador web optimizando los tiempos de carga de tu página web. Como pega ,se le puede poner que debes de tener bien controlados los archivos que se almacenarán en la caché, ya que si realizas algún cambio en ellos, y un usuario había entrado en la web, esos cambios no los verá a no ser que borre la caché del navegador. Para que esto no ocurra comentaré a continuación algunos métodos de buenas prácticas para que estos cambios hagan efecto en los usuarios que hayan accedido en la web y hayan guardado los datos en la caché. 
