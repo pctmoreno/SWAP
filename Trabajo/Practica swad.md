@@ -59,7 +59,7 @@ Otra recomendación es establecer en la web un período de vaciado de caché, pa
 ###Imágenes: 
 Una de las partes de la web que emplea más tiempo en cargar son las imágenes , ya que en ocasiones son archivos de gran tamaño, para ello hay varias formas de optimizar las imágenes.
 
-    * **Optimizacion ps**
+####Optimizacion ps
 
 La famosa herramienta Phostoshop viene con la opción de exportación web, para ello una vez tengamos la imagen , pulsamos en Archivo - Guardar para web y nos aparecerá la siguiente ventana:
 
@@ -69,13 +69,13 @@ La famosa herramienta Phostoshop viene con la opción de exportación web, para 
 
 -Otra opción interesante siempre es el tipo de archivo,cada tipo de archivo se tendrá unas propiedades diferentes : 
 
-####Formato.png : 
+#####Formato.png : 
 Se utiliza sobretodo para las imagenes que estan hechas con formas geométricas y tiene colores planos. La gran ventaja de este formato es que conserva las transparencias y que no pierde mucha calidad en la comprensión de la imagen , por eso se utiliza en logotipos e imágenes que necesariamente tenga una gran calidad, pero para optimizar la web, cuanto menos se utilice mejor.
 
-####Formato .jpg: 
+#####Formato .jpg: 
 Es el formato universal que se utiliza sobre todo para las imágenes, pues aunque se pierde un poco de calidad al comprimir las imágenes, no se pierden colores o tonalidades, es el más recomendado a la hora de tener imágenes optimizadas. 
 
-####Formato .gif: 
+#####Formato .gif: 
 Este formato se utiliza para animaciones sobretodo. Dado que se utilizan varias imágenes o un video para hacer el gif, el tamaño en Kb puede ser muy grande; por eso, en ocasiones se comprime la imagen y pierde calidad.
 
 -Por último también tiene la opción de la calidad, podemos seleccionar la calidad de la imagen que queremos, cuanta menos calidad, menos pesara la foto y por consiguiente mas rapido cargara nuestra página web.  
