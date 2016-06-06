@@ -2,17 +2,19 @@
 
      
 
-##1. Introducción: El objetivo de este trabajo es el la optimización de páginas webs pesadas. Para las pruebas, ha sido creada una página web pesada con imágenes de mucho peso, ficheros javascript, css, etc.
+##1. Introducción: 
+
+El objetivo de este trabajo es el la optimización de páginas webs pesadas. Para las pruebas, ha sido creada una página web pesada con imágenes de mucho peso, ficheros javascript, css, etc.
 
 	
 
-	Durante este trabajo se enumeran diferentes buenas prácticas para la optimización en la carga de sitios webs pesados, mostrando sus diferencias y progresos en tiempos de carga de la página web así como la experiencia del usuario.
+Durante este trabajo se enumeran diferentes buenas prácticas para la optimización en la carga de sitios webs pesados, mostrando sus diferencias y progresos en tiempos de carga de la página web así como la experiencia del usuario.
 
-	También se van a realizar algunas optimizaciones en el servidor apache que utilizaremos durante este trabajo.
+También se van a realizar algunas optimizaciones en el servidor apache que utilizaremos durante este trabajo.
 
 ##2. Buenas prácticas:
 
-**	**Aunque en las fechas en las que nos encontramos la velocidad de descarga de internet no tiene nada que ver con lo que era hace unos años, las webs de hoy en día cada vez tienen más contenido visual , lo cual hace que tenga una mayor demora a la hora de poder visualizar la página web. En este apartado se redactarán algunas de las buenas prácticas más utilizadas para que un sitio web sea más óptimo, y cargue más rápido. Como norma general un sitio web no puede tardar más de 5 segundos en cargar, una web lenta puede desesperar al usuario que la está visualizando y por lo cual la abandonará. 
+Aunque en las fechas en las que nos encontramos la velocidad de descarga de internet no tiene nada que ver con lo que era hace unos años, las webs de hoy en día cada vez tienen más contenido visual , lo cual hace que tenga una mayor demora a la hora de poder visualizar la página web. En este apartado se redactarán algunas de las buenas prácticas más utilizadas para que un sitio web sea más óptimo, y cargue más rápido. Como norma general un sitio web no puede tardar más de 5 segundos en cargar, una web lenta puede desesperar al usuario que la está visualizando y por lo cual la abandonará. 
 
 ###Ficheros min.css
 
